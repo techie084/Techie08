@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<url set xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://techie08.vercel.app/</loc>
+  </url>
+  <url>
+    <loc>https://techie08.vercel.app/about</loc>
+  </url>
+  <url>
+    <loc>https://techie08.vercel.app/projects</loc>
+  </url>
+  <url>
+    <loc>https://techie08.vercel.app/blog</loc>
+  </url>
+</url>
