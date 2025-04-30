@@ -1,7 +1,6 @@
 <script lang="ts">
 	export let title = 'Wisdom Matthew';
-	export let description =
-		'Wisdom Matthew, a Frontend Developer passionate about building modern web app';
+	export let description = 'Wisdom Matthew, a Frontend Web Developer';
 	export let image = 'https://techie08.vercel.app/og-image.png';
 	export let url = 'https://techie08.vercel.app/';
 </script>

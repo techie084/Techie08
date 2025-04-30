@@ -3,6 +3,6 @@ title: 'My first Blog Post'
 date: '2025-04-08'
 ---
 
-# Hello World
+### First Blog Post
 
-This is my first post written in markdown!
+_This is my first post written in markdown! 🤸_
