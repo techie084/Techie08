@@ -1,38 +1,49 @@
-# sv
+# My Portfolio 🎉
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Welcome to my personal portfolio website 🤸🤍! This project showcases some of the work I've done as a developer, including real-world projects, skills, and a little bit about me.
 
-## Creating a project
+### 🌐 Live Demo
 
-If you're seeing this, you've probably already done this step. Congrats!
+Check out the live version here: [techie08.vercel.app](https://techie08.vercel.app)
+
+### 📸 Preview
+
+<!-- ![Portfolio Screenshot](./screenshot.png) -->
+
+### 🛠 Built With
+
+- [Svelte](https://svelte.dev/)
+- [Tailwind-Css](https://tailwindcss.com)
+- [TypeScript](https:typesctiplaang.org)
+- [GSAP](https://gsap.com)
+
+### ✨ Features
+
+- Clean, minimalist design
+- Mobile-first responsive layout
+- Smooth animations and transitions
+- Projects section with Working links
+
+## 🚧 Future Improvements
+
+- Add blog section
+- Integrate dark mode toggle
+- Expand animation library usage
+- CMS integration for dynamic content
+
+## 🧑‍💻 Getting Started
+
+1. Clone the repository:
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.com/techie084/Techie08.git
 ```
 
-## Developing
+2. Run this command to install dependency:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+```npm
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+3. Open your browser and visit <http://localhost:5173>

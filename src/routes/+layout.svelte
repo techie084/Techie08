@@ -7,4 +7,4 @@
 
 {@render children()}
 
-injectAnalytics({ mode: dev ? "development" : "production"});
+<!-- injectAnalytics({ mode: dev ? "development" : "production"}); -->
