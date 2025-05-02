@@ -1,23 +1,25 @@
 # My Portfolio 🎉
 
-Welcome to my personal portfolio website 🤸🤍! This project showcases some of the work I've done as a developer, including real-world projects, skills, and a little bit about me.
+Welcome to my personal portfolio website 🤸🤍.
 
-### 🌐 Live Demo
+This project showcases some of the work I've done as a developer, including real-world projects, skills, and a little bit about me.
 
-Check out the live version here: [techie08.vercel.app](https://techie08.vercel.app)
+## 🌐 Live Demo
 
-### 📸 Preview
+Check out the live version here: [techie08.vercel.app](techie08.vercel.app)
+
+## 📸 Preview
 
 <!-- ![Portfolio Screenshot](./screenshot.png) -->
 
-### 🛠 Built With
+## 🛠 Built With
 
 - [Svelte](https://svelte.dev/)
 - [Tailwind-Css](https://tailwindcss.com)
 - [TypeScript](https:typesctiplaang.org)
 - [GSAP](https://gsap.com)
 
-### ✨ Features
+## ✨ Features
 
 - Clean, minimalist design
 - Mobile-first responsive layout
@@ -33,17 +35,17 @@ Check out the live version here: [techie08.vercel.app](https://techie08.vercel.a
 
 ## 🧑‍💻 Getting Started
 
-1. Clone the repository:
+1. Clone the repository:.
 
-```bash
-git clone https://github.com/techie084/Techie08.git
-```
+   ```bash
+   git clone https://github.com/techie084/Techie08.git
+   ```
 
-2. Run this command to install dependency:
+2. Run this command to install dependency.
 
-```npm
-npm install
-npm run dev
-```
+   ```npm
+   npm install
+   npm run dev
+   ```
 
-3. Open your browser and visit <http://localhost:5173>
+3. Open your browser and visit <http://localhost:5173>.
