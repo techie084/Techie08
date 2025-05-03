@@ -7,7 +7,6 @@
 	import Experience from '$lib/component/experience.svelte';
 	import Project from '$lib/component/project.svelte';
 	import Blog from '$lib/component/blog.svelte';
-	// import Loading from '$lib/component/loading.svelte';
 </script>
 
 <!-- links
@@ -32,7 +31,7 @@ facebook => https://facebook.com/h  -->
 		<Stack />
 		<Experience />
 		<Project />
-		<Blog/>
+		<Blog />
 		<Contact />
 	</main>
 	<Navbar />

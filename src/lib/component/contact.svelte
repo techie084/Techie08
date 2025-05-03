@@ -14,7 +14,7 @@
 		</a>
 		<a
 			class="flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			href="https://x,com/techie084"
+			href="https://x.com/techie084"
 			aria-disabled="true"
 			><Twitter /> <span>Twitter</span>
 		</a>

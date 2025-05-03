@@ -3,7 +3,7 @@
 <section class="space-y-4">
 	<h2>Tech Stack</h2>
 
-	<div class="mt-3 flex w-full flex-wrap gap-3">
+	<div class="mt-3 flex w-full flex-wrap gap-2.5">
 		<a
 			class=" flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
 			target="_blank"
@@ -19,7 +19,7 @@
 		<a
 			class="flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
 			target="_blank"
-			href="https://supabase.com"
+			href="https://git-scm.com"
 			><img class="W-7 h-7" src="Git.svg" alt="Git-svg" /> Git
 		</a>
 		<a
