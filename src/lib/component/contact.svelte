@@ -5,16 +5,18 @@
 
 <section id="contact" class="w-full space-y-4">
 	<h2>Socials</h2>
-	<div class="flex w-full flex-wrap gap-3">
+	<section class="flex w-full flex-wrap gap-3">
 		<a
 			class="flex w-max items-center justify-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			href="mailto:@wisdommatthew08@gmail.com"
+			href="mailto:wisdommatthew08@gmail.com"
+			target="_blank"
 			aria-hidden="true"
 			><Mail /> <span>Mail</span>
 		</a>
 		<a
 			class="flex w-max items-center justify-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
 			href="https://x.com/techie084"
+			target="_blank"
 			aria-disabled="true"
 			><Twitter /> <span>Twitter</span>
 		</a>
@@ -42,7 +44,7 @@
 		>
 			<Instagram /><span>Instagram</span>
 		</a>
-	</div>
+	</section>
 </section>
 
 <Footer />

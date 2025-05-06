@@ -4,5 +4,5 @@
 </script>
 
 <main id="app">
-	{@render children?.()}
+	{@render children()}
 </main>

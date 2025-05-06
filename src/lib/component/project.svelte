@@ -15,13 +15,13 @@
 					href="https://github.com/techie084"
 					target="_blank"
 					class="flex items-center gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
-					aria-hidden="true"><Link class="h-4 w-4" />github</a
+					aria-hidden="true"> github</a
 				>
 				<a
 					href="/"
 					target="_blank"
 					class="flex items-center gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
-					aria-hidden="true"><ScanEye class="h-4 w-4" />preview</a
+					aria-hidden="true"> preview</a
 				>
 			</div>
 			<p class="line-clamp-2 text-start text-[clamp(0.8rem,1.8vw,1.1rem)] text-gray-200">
@@ -39,13 +39,13 @@
 					href="https://animation-poll.vercel.app"
 					target="_blank"
 					class="flex gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
-					aria-hidden="true"><Link class="h-4 w-4" /> github</a
+					aria-hidden="true"> github</a
 				>
 				<a
 					href="https://animation-poll.vercel.app"
 					target="_blank"
 					class="flex gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
-					aria-hidden="true"><ScanEye class="h-4 w-4" /> preview</a
+					aria-hidden="true"> preview</a
 				>
 			</div>
 			<p class="line-clamp-2 text-start text-[clamp(0.8rem,1.8vw,1.1rem)] text-gray-200">

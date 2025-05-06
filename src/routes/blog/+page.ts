@@ -1,4 +1,4 @@
-// import type { fetchMarkdownPosts } from '$lib/Utils';
+// import type  {fetchMarkdownPosts} from '$lib/Utils';
 
 export async function load({ fetch }) {
 	const response = await fetch('api/post');

@@ -15,8 +15,9 @@
 	<h2 class="">Projects</h2>
 	<div>
 		Nothing to see here yet but you can check out my <a
-			class="text-blue-300 hover:text-blue-500"
-			href="https://github.com/techie084">Github</a
+			class="text-blue-400 hover:text-blue-600"
+			href="https://github.com/techie084"
+			target="_blank">Github</a
 		>
 	</div>
 </section>
