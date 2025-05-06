@@ -30,8 +30,7 @@
 				<span>lets talk</span></a
 			>
 			<a
-				href="https://techie08.vercel.app/"
-				target="_blank"
+				href="/"
 				type="button"
 				class="flex items-center justify-center gap-1 rounded-md border px-2 py-1 text-[clamp(0.8rem,2vw,1rem)] text-gray-200"
 				aria-label="aria-label"

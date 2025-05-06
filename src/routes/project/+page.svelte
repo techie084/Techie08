@@ -16,8 +16,7 @@
 	<div>
 		Nothing to see here yet but you can check out my <a
 			class="text-blue-400 hover:text-blue-600"
-			href="https://github.com/techie084"
-			target="_blank">Github</a
+			href="/#contact">Socials</a
 		>
 	</div>
 </section>
