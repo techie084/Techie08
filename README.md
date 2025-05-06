@@ -49,3 +49,5 @@ Check out the live version here: [techie08.vercel.app](techie08.vercel.app)
    ```
 
 3. Open your browser and visit <http://localhost:5173>.
+
+## Enjoy 🥳

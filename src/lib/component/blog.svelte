@@ -11,7 +11,7 @@
 		<LibraryBig class=" size-[clamp(2rem,5vw,2.25rem)] shrink-0 text-gray-200" aria-hidden="true" />
 		<div class="flex w-full flex-col gap-1">
 			<h3 class=" line-clamp-2 break-all text-start hover:cursor-pointer group-hover:text-gray-200">
-				SetUp A Svelte-Kit Project: Beginner's Guide
+				Set-up A Svelte-Kit Project: Beginner's Guide
 			</h3>
 			<p class="line-clamp-2 text-start text-[clamp(0.8rem,1.8vw,1.1rem)] text-gray-200">
 				A comprehensive guide to setting up a svelte-kit project from installation to development

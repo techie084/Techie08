@@ -1,6 +1,12 @@
 <script lang="ts">
-	import { fly, fade } from 'svelte/transition';
 	import { LayoutGrid, Home, Wrench, LibraryBig, X } from '@lucide/svelte';
+	import { quintOut } from 'svelte/easing';
+	import { crossfade } from 'svelte/transition';
+
+	const [send, receive] = crossfade({
+		duration: 300,
+		easing: quintOut
+	});
 
 	const navigation = $state([
 		{
@@ -32,37 +38,34 @@
 		isMenuOpen = !isMenuOpen;
 	}}
 >
-	<button class="h-full w-full">
+	<button class="h-full w-full transition-transform duration-300" aria-label="Toggle nav">
 		{#if isMenuOpen}
-			<span class="flex h-6 w-6 shrink-0 items-center" out:fade={{ duration: 0 }}>
+			<span class="flex h-6 w-6 shrink-0 items-center">
 				<LayoutGrid aria-hidden="true" />
 			</span>
 		{:else}
-			<span
-				class="flex h-6 w-6 shrink-0 items-center justify-center"
-				in:fly={{ y: 5, duration: 20 }}
-			>
+			<span class="flex h-6 w-6 shrink-0 items-center justify-center">
 				<X aria-hidden="true" />
 			</span>
 		{/if}
 	</button>
 	{#if !isMenuOpen}
 		<ul
-			class="absolute bottom-16 right-0 z-10 flex flex-col gap-2 rounded-lg border border-[#212529] bg-[#26262a] p-2 ease-in-out"
+			class="absolute bottom-16 right-0 z-10 flex flex-col gap-2 rounded-lg border border-[#212529] bg-[#26262a] p-2"
 		>
 			<li class="flex flex-col gap-2">
-				{#each navigation as nav}
+				{#each navigation as { path, icon, name }}
 					<a
 						class="flex w-full items-center gap-2 rounded-md bg-[#37373c] px-2 py-1 text-gray-200"
 						aria-current="page"
-						href={nav.path}><svelte:component this={nav.icon} /> {nav.name}</a
+						href={path}
 					>
+						<!-- svelte-ignore svelte_component_deprecated -->
+						<svelte:component this={icon} class="h-5 w-5" />
+						{name}
+					</a>
 				{/each}
 			</li>
 		</ul>
 	{/if}
 </nav>
-
-<!-- <Home /> -->
-<!-- <LibraryBig /> -->
-<!-- <Wrench /> -->

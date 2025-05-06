@@ -12,13 +12,13 @@
 			<div class="flex items-center gap-2">
 				<h3 class="line-clamp-3 break-all text-start">Browser Extension UI</h3>
 				<a
-					href="https://github.com/techie084/Animation-Poll"
+					href="https://github.com/techie084"
 					target="_blank"
 					class="flex items-center gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
 					aria-hidden="true"><Link class="h-4 w-4" />github</a
 				>
 				<a
-					href="https://animation-poll.vercel.app"
+					href="/"
 					target="_blank"
 					class="flex items-center gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
 					aria-hidden="true"><ScanEye class="h-4 w-4" />preview</a

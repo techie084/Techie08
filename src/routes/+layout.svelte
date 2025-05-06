@@ -3,4 +3,6 @@
 	let { children } = $props();
 </script>
 
-{@render children()}
+<main id="app">
+	{@render children?.()}
+</main>

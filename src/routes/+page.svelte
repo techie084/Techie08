@@ -9,12 +9,6 @@
 	import Blog from '$lib/component/blog.svelte';
 </script>
 
-<!-- links
-portfolio => "https://techie08.vercel.app"
-x (twitter) => https://x.com/Techie084 
-github => https://github.com/techie084
-facebook => https://facebook.com/h  -->
-
 <!-- Seo data -->
 <Seo
 	title="Wisdom Matthew | Home"
@@ -24,15 +18,12 @@ facebook => https://facebook.com/h  -->
 />
 
 <!-- components -->
-<main id="app">
-	<main class="flex w-full flex-auto flex-col items-center justify-center space-y-10">
-		<!-- <Loading /> -->
-		<Header />
-		<Stack />
-		<Experience />
-		<Project />
-		<Blog />
-		<Contact />
-	</main>
-	<Navbar />
+<main class="flex w-full flex-auto flex-col items-center justify-center space-y-10">
+	<Header />
+	<Stack />
+	<Experience />
+	<Project />
+	<Blog />
+	<Contact />
 </main>
+<Navbar />

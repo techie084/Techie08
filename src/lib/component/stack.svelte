@@ -1,5 +1,3 @@
-<!-- <script lang="ts"></script> -->
-
 <section class="space-y-4">
 	<h2>Tech Stack</h2>
 
@@ -40,6 +38,18 @@
 			href="https://go.dev"
 		>
 			<img class="h-7 w-7" src="GoLang.svg" alt="golang-svg" /> Go-Lang
+		</a>
+		<a
+			class="flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
+			target="_blank"
+			href="https://supabase.com"
+			><img class="W-7 h-7" src="NodeJS-Dark.svg" alt="supabase-light-svg" /> Node-js
+		</a>
+		<a
+			class="flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
+			target="_blank"
+			href="https://supabase.com"
+			><img class="W-7 h-7" src="MongoDB.svg" alt="supabase-light-svg" /> MongoDB
 		</a>
 		<a
 			class="flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"

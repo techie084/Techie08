@@ -3,7 +3,11 @@
 	import * as index from '$lib/index';
 </script>
 
-<header class="flex flex-col-reverse items-start justify-center gap-2">
+<header
+	class="flex flex-col-reverse items-start justify-center gap-2"
+	data-sveltekit-noscroll
+	data-sveltekit-preload-code="eager"
+>
 	<section>
 		<h1
 			class="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl
@@ -19,16 +23,17 @@
 			<a
 				href="#contact"
 				type="button"
-				class="text-[clapm[0.8rem, 2vw, 1rem]] flex items-center justify-center gap-1 rounded-md border px-2 py-1 text-gray-200"
+				class="flex items-center justify-center gap-1 rounded-md border px-2 py-1 text-[clamp(0.8rem,2vw,1rem)] text-gray-200"
 				aria-label="aria-label"
 			>
 				<MessageCircleMore class="py-1" aria-hidden="true" />
 				<span>lets talk</span></a
 			>
 			<a
-				href="#resume"
+				href="https://techie08.vercel.app/"
+				target="_blank"
 				type="button"
-				class="text-[clapm[0.8rem, 2vw, 1rem]] flex items-center justify-center gap-1 rounded-md border px-2 py-1 text-gray-200"
+				class="flex items-center justify-center gap-1 rounded-md border px-2 py-1 text-[clamp(0.8rem,2vw,1rem)] text-gray-200"
 				aria-label="aria-label"
 			>
 				<FileUser class="py-1" aria-hidden="true" />

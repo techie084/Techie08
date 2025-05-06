@@ -7,18 +7,6 @@ export default {
 	theme: {
 		fontFamily: {
 			Overpass: 'Overpass'
-		},
-
-		extend: {
-			color: {
-				brand: {
-					background: '#151615',
-					textGray: '#b4b6b8',
-					link: '#6eb8ff',
-					text: '#DBDFDF',
-					elevate: '#27272A'
-				}
-			}
 		}
 	},
 
