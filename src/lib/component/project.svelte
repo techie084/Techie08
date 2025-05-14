@@ -1,56 +1,59 @@
 <script lang="ts">
-	import { SlidersHorizontal, Link, ScanEye, AppWindow, ArrowRight } from '@lucide/svelte';
+	import { SlidersHorizontal, AppWindow, ArrowRight, Github, ArrowUpRight } from '@lucide/svelte';
+
+	const projects = [
+		{
+			title: 'Browser Extension Manager UI',
+			description: 'Browser extension manager for managing extensions',
+			icon: AppWindow,
+			links: ['https://browser-extension-ui.vercel.app', 'https://github.com/techie084'],
+			tags: [Github, ArrowUpRight]
+		},
+		{
+			title: 'Animation Poll',
+			description: 'Poll system used to vote based on question asked',
+			icon: SlidersHorizontal,
+			links: ['https://animation-poll.vercel.app', 'https://github.com/techie084'],
+			tags: [Github, ArrowUpRight]
+		}
+	];
 </script>
 
 <section class="w-full space-y-4">
 	<h2 class="flex items-center justify-between">
 		Projects <a href="/project"><ArrowRight class="h-6 w-6 cursor-pointer text-gray-200" /></a>
 	</h2>
-	<div class="flex w-full items-center gap-2 rounded-lg border border-[#26262a] p-2">
-		<AppWindow class=" size-[clamp(2rem,5vw,2.25rem)] shrink-0 text-gray-200" />
-		<div class="flex w-full flex-col gap-1">
-			<div class="flex items-center gap-2">
-				<h3 class="line-clamp-3 break-all text-start">Browser Extension UI</h3>
-				<a
-					href="https://github.com/techie084"
-					target="_blank"
-					class="flex items-center gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
-					aria-hidden="true"> github</a
-				>
-				<a
-					href="/"
-					target="_blank"
-					class="flex items-center gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
-					aria-hidden="true"> preview</a
-				>
-			</div>
-			<p class="line-clamp-2 text-start text-[clamp(0.8rem,1.8vw,1.1rem)] text-gray-200">
-				Browser extension manager for managing extensions
-			</p>
-		</div>
-	</div>
 
-	<div class="flex w-full items-center gap-2 rounded-lg border border-[#26262a] p-2">
-		<SlidersHorizontal class=" size-[clamp(2rem,5vw,2.25rem)] shrink-0 text-gray-200" />
-		<div class="flex w-full flex-col gap-1">
-			<div class="flex items-center gap-2">
-				<h3 class="line-clamp-3 break-all text-start">Animation Poll</h3>
-				<a
-					href="https://animation-poll.vercel.app"
-					target="_blank"
-					class="flex gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
-					aria-hidden="true"> github</a
-				>
-				<a
-					href="https://animation-poll.vercel.app"
-					target="_blank"
-					class="flex gap-1 rounded-sm bg-[#26262a] p-1 text-xs capitalize text-gray-200 hover:bg-[#393942]"
-					aria-hidden="true"> preview</a
-				>
+	{#each projects as project}
+		<div class="flex w-full items-center gap-2 rounded-lg border border-[#26262a] p-2">
+			<svelte:component
+				this={project.icon}
+				class="size-[clamp(2.5rem,5vw,2.25rem)] shrink-0 text-gray-200"
+			/>
+			<div class="flex w-full flex-col gap-1">
+				<div class="flex items-center justify-between gap-2">
+					<h3 class="line-clamp-3 text-start">{project.title}</h3>
+					<div class="flex justify-between gap-3">
+						{#each project.links as link, i}
+							<a
+								href={link}
+								target="_blank"
+								class="flex items-center gap-1 rounded-sm text-xs capitalize text-gray-200"
+								aria-hidden="true"
+							>
+								{#each project.tags as tag, j}
+									{#if i === j}
+										<svelte:component this={tag} class="h-6 w-6" />
+									{/if}
+								{/each}
+							</a>
+						{/each}
+					</div>
+				</div>
+				<p class="line-clamp-2 text-start text-[clamp(0.8rem,2vw,1.1rem)] text-gray-200">
+					{project.description}
+				</p>
 			</div>
-			<p class="line-clamp-2 text-start text-[clamp(0.8rem,1.8vw,1.1rem)] text-gray-200">
-				Poll system used to voting based on question asked
-			</p>
 		</div>
-	</div>
+	{/each}
 </section>

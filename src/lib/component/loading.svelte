@@ -1,5 +1,6 @@
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
 <script lang="ts">
+	import { gsap } from 'gsap';
+
 	document.addEventListener('DOMContentLoaded', function () {
 		const letters = document.querySelectorAll('.text span');
 		const tl = gsap.timeline();
@@ -26,31 +27,16 @@
 
 <div class="loader">
 	<div class="text">
-		<span data-text="H">H</span>
-		<span data-text="A">A</span>
-		<span data-text="N">N</span>
-		<span data-text="K">K</span>
 		<span data-text="T">T</span>
-		<span data-text="H">H</span>
 		<span data-text="E">E</span>
-		<span data-text="T">T</span>
-		<span data-text="A">A</span>
-		<span data-text="N">N</span>
-		<span data-text="K">K</span>
+		<span data-text="C">C</span>
+		<span data-text="H">H</span>
+		<span data-text="I">I</span>
+		<span data-text="E">E</span>>
 	</div>
 </div>
 
 <style>
-	/* body {
-        font-family: "Oswald", "Bebas Neue", sans-serif;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #111;
-        overflow: hidden;
-      } */
-
 	.text {
 		display: flex;
 		font-size: 6.5rem;

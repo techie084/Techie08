@@ -1,61 +1,63 @@
+<script lang="ts">
+	const stacks = [
+		{
+			title: 'SvelteKit',
+			link: 'https://svelte.dev',
+			image: 'Svelte.svg'
+		},
+		{
+			title: 'JavaScript',
+			link: 'https://developer.mozilla.org/en-Us/docs/Web/JavaScript',
+			image: 'JavaScript.svg'
+		},
+		{
+			title: 'Git',
+			link: 'https://git-smc.com',
+			image: 'Git.svg'
+		},
+		{
+			title: 'TailwindCss',
+			link: 'https://tailwindcss.com',
+			image: 'TailwindCSS-Light.svg'
+		},
+		{
+			title: 'TypeScript',
+			link: 'https://Typescriptlang.org',
+			image: 'TypeScript.svg'
+		},
+		{
+			title: 'GoLang',
+			link: 'https://go.dev',
+			image: 'GoLang.svg'
+		},
+		{
+			title: 'NodeJs',
+			link: 'https://nodejs.org',
+			image: 'NodeJS-Dark.svg'
+		},
+		{
+			title: 'MongoDB',
+			link: 'https://mongodb.com',
+			image: 'MongoDB.svg'
+		},
+		{
+			title: 'Supabase',
+			link: 'https://supabase.com',
+			image: 'Supabase-Light.svg'
+		}
+	];
+</script>
+
 <section class="space-y-4">
 	<h2>Tech Stack</h2>
-
 	<div class="mt-3 flex w-full flex-wrap gap-2">
-		<a
-			class=" flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			target="_blank"
-			href="https://svelte.dev"
-			><img class="h-7 w-7" src="Svelte.svg" alt="Svelte-svg" /> SvelteKit
-		</a>
-		<a
-			class=" flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			target="_blank"
-			href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-			><img class="h-7 w-7" src="JavaScript.svg" alt="javascript-svg" /> JavaScript
-		</a>
-		<a
-			class="flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			target="_blank"
-			href="https://git-scm.com"
-			><img class="w-7 h-7" src="Git.svg" alt="Git-svg" /> Git
-		</a>
-		<a
-			class=" flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			target="_blank"
-			href="https://tailwindcss.com"
-			><img class="h-7 w-7" src="TailwindCSS-Light.svg" alt="Tailwind-svg" /> TailwindCss
-		</a>
-		<a
-			class=" flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			target="_blank"
-			href="https://Typescriptlang.org"
-			><img class="h-7 w-7" src="TypeScript.svg" alt="Typescript-svg" /> TypeScript
-		</a>
-		<a
-			class=" flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			target="_blank"
-			href="https://go.dev"
-		>
-			<img class="h-7 w-7" src="GoLang.svg" alt="golang-svg" /> GoLang
-		</a>
-		<a
-			class="flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			target="_blank"
-			href="https://nodejs.org"
-			><img class="W-7 h-7" src="NodeJS-Dark.svg" alt="supabase-light-svg" /> NodeJs
-		</a>
-		<a
-			class="flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			target="_blank"
-			href="https://mongodb.com"
-			><img class="W-7 h-7" src="MongoDB.svg" alt="supabase-light-svg" /> MongoDB
-		</a>
-		<a
-			class="flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
-			target="_blank"
-			href="https://supabase.com"
-			><img class="W-7 h-7" src="Supabase-Light.svg" alt="supabase-light-svg" /> Supabase
-		</a>
+		{#each stacks as stack}
+			<a
+				class=" flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
+				target="_blank"
+				href={stack.link}
+				><img class="h-7 w-7" src={stack.image} alt={stack.image} />{stack.title}
+			</a>
+		{/each}
 	</div>
 </section>

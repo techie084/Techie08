@@ -2,7 +2,7 @@
 	export let title = 'Wisdom Matthew';
 	export let description = 'Wisdom Matthew, a Frontend Web Developer';
 	export let image = 'https://techie08.vercel.app/og-image.png';
-	export let url = `https://techie08.vercel.app/{title ?? ''}`;
+	export let url = 'https://techie08.vercel.app';
 </script>
 
 <svelte:head>

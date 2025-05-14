@@ -1,7 +1,10 @@
 <script lang="ts">
-	import Seo from '$lib/component/shared/seo.svelte';
-	import * as index from '$lib/index';
+	// import Post1 from "$lib/blog-posts/svelte-is-better.md"
+
 	let { data } = $props();
+	$inspect(data);
 </script>
 
-<Seo title="{index.title} - {data.title}" description={data.desc} />
+<!-- <Post1 /> -->
+<h1>{data.title}</h1>
+<p>{data.body}</p>
