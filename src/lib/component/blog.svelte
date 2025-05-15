@@ -22,7 +22,7 @@
 		>
 			<svelte:component
 				this={blog.icon}
-				class=" size-[clamp(2.5rem,5vw,2.25rem)] shrink-0 text-gray-200"
+				class=" size-[clamp(2rem,5vw,2.25rem)] shrink-0 text-gray-200"
 				aria-hidden="true"
 			/>
 			<div class="flex w-full flex-col gap-1">

@@ -38,13 +38,17 @@
 
 	{#each projects as project}
 		<div class="flex w-full items-center gap-4 rounded-lg border border-[#26262a] p-2">
-			<svelte:component this={project.icons} class="size-[clamp(2.5rem,5vw,2.25rem)] shrink-0" />
+			<svelte:component this={project.icons} class="size-[clamp(2rem,5vw,2.25rem)] shrink-0" />
 			<div class="flex w-full flex-col gap-1">
 				<div class="flex items-center justify-between gap-2">
 					<h3 class="line-clamp-3 text-start">{project.title}</h3>
-					<div class="flex">
+					<div class="flex gap-2">
 						{#each project.links as link, i}
-							<a class="flex size-[clamp(2rem,5vw,2.25rem)] shrink-0" href={link} target="_blank">
+							<a
+								class="flex size-[clamp(1.5rem,5vw,2.25rem)] shrink-0 gap-2"
+								href={link}
+								target="_blank"
+							>
 								{#each project.linkIcons as icon, j}
 									{#if i === j}
 										<svelte:component this={icon} />

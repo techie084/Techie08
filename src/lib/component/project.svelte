@@ -28,7 +28,7 @@
 		<div class="flex w-full items-center gap-2 rounded-lg border border-[#26262a] p-2">
 			<svelte:component
 				this={project.icon}
-				class="size-[clamp(2.5rem,5vw,2.25rem)] shrink-0 text-gray-200"
+				class="size-[clamp(2rem,5vw,2.25rem)] shrink-0 text-gray-200"
 			/>
 			<div class="flex w-full flex-col gap-1">
 				<div class="flex items-center justify-between gap-2">
@@ -43,7 +43,7 @@
 							>
 								{#each project.tags as tag, j}
 									{#if i === j}
-										<svelte:component this={tag} class="h-6 w-6" />
+										<svelte:component this={tag} class="h-5 w-5" />
 									{/if}
 								{/each}
 							</a>

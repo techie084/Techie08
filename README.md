@@ -6,7 +6,7 @@ This project showcases some of the work I've done as a developer, including real
 
 ## 🌐 Live Demo
 
-Check out the live version here: [techie08.vercel.app](techie08.vercel.app)
+Check out the live version here: [https://techie08.vercel.app](https://techie08.vercel.app)
 
 ## 📸 Preview
 
