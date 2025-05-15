@@ -60,13 +60,6 @@
 			</div>
 		</div>
 	{/each}
-
-	<!-- <div>
-		Nothing to see here yet but you can check out my <a
-			class="text-blue-600 hover:text-blue-300"
-			href="/#contact">Socials</a
-		>
-	</div> -->
 </section>
 
 <Navbar />

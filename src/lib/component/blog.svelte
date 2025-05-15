@@ -26,7 +26,7 @@
 				aria-hidden="true"
 			/>
 			<div class="flex w-full flex-col gap-1">
-				<h3 class=" line-clamp-2 text-start hover:cursor-pointer group-hover:text-gray-200">
+				<h3 class="line-clamp-2 text-start  group-hover:text-gray-200">
 					{blog.title}
 				</h3>
 				<p class="line-clamp-2 text-start text-[clamp(0.8rem,1.8vw,1.1rem)] text-gray-200">

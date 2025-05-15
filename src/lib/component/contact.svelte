@@ -20,7 +20,7 @@
 		},
 		{
 			title: 'Facebook',
-			link: 'https://facebook.com/itzking.wisy',
+			link: 'https://facebook.com/techie084',
 			icon: Facebook
 		},
 		{
