@@ -3,6 +3,6 @@
 	let { children } = $props();
 </script>
 
-<main id="app" class="font-Overpass font-black">
+<main id="app" class="font-Overpass">
 	{@render children()}
 </main>
