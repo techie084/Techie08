@@ -33,7 +33,7 @@
 			<div class="flex w-full flex-col gap-1">
 				<div class="flex items-center justify-between gap-2">
 					<h3 class="line-clamp-3 text-start">{project.title}</h3>
-					<div class="flex justify-between gap-3">
+					<div class="flex justify-between gap-2">
 						{#each project.links as link, i}
 							<a
 								href={link}
