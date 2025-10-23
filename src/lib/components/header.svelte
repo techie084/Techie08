@@ -16,7 +16,9 @@
 			<strong>{index.title}</strong>
 		</h1>
 		<p class="text-lg">
-			Frontend Web Developer specialized in <b>Svelte</b>, <b>Svelte-Kit</b>, <b>TypeScript</b>,
+			Full-Stack Web Developer specialized in <b>Svelte</b>, <b>Svelte-Kit</b>, <b>TypeScript</b>,
+			<b> Node Js </b>
+			<!-- Frontend Web Developer specialized in <b>Svelte</b>, <b>Svelte-Kit</b>, <b>TypeScript</b>, -->
 			focused on building Scalable, Performant Web Application With clean, maintainable code.
 		</p>
 		<div class="item-center mt-4 flex gap-4">

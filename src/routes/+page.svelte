@@ -1,22 +1,40 @@
 <script lang="ts">
 	// svelte content
 	import { onMount } from 'svelte';
+	import gsap from 'gsap';
+	import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 	// importing component
-	import Seo from '$lib/component/shared/seo.svelte';
 	import Header from '$lib/component/header.svelte';
 	import Stack from '$lib/component/stack.svelte';
-	import Navbar from '$lib/component/navbar.svelte';
 	import Contact from '$lib/component/contact.svelte';
 	import Experience from '$lib/component/experience.svelte';
 	import Project from '$lib/component/project.svelte';
 	import Blog from '$lib/component/blog.svelte';
+	import Seo from '$lib/component/shared/seo.svelte';
+	import { pages } from '$lib/config/seo';
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	onMount(() => {
+		gsap.utils.toArray<HTMLElement>('.fade-in-section').forEach((element) => {
+			gsap.from(element, {
+				opacity: 0,
+				y: 50,
+				duration: 0.8,
+				scrollTrigger: {
+					trigger: element,
+					start: 'top 80%',
+					toggleActions: 'play none none reverse'
+				}
+			});
+		});
+	});
 
 	// installed packages
-	import gsap from 'gsap';
+	// import gsap from 'gsap';
 
-	// logic
-	// let showLoader = true;
+	// let showLoader: boolean = true;
 	// let logoText: any;
 	// let loaderOverlay: any;
 
@@ -45,9 +63,9 @@
 	// });
 </script>
 
-<!-- {#if showLoader} -->
-<!-- Loader Overlay -->
-<!-- <div
+<!-- Loader Overlay
+{#if showLoader}
+	<div
 		bind:this={loaderOverlay}
 		class="fixed inset-0 z-50 flex items-center justify-center bg-[#0d0d0f]"
 	>
@@ -55,18 +73,12 @@
 			bind:this={logoText}
 			class="font-techie animate-bounce text-5xl font-bold tracking-widest text-white"
 		>
-			Techie 🤸🤍
+			 Techie 🤸🤍
 		</h1>
 	</div>
 {/if} -->
 
-<!-- Seo data -->
-<Seo
-	title="Wisdom Matthew | Home"
-	description="Frontend Web Developer."
-	url="https://techie08.vercel.app/"
-	image="https://techie08.vercel.app/preview.png"
-/>
+<Seo meta={pages.home} />
 
 <!-- components -->
 <main class="flex w-full flex-auto flex-col items-center justify-center space-y-10">
@@ -77,4 +89,3 @@
 	<Blog />
 	<Contact />
 </main>
-<Navbar />

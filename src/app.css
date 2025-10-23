@@ -2,7 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
 * {
 	transition: all 300ms ease;
 }
@@ -12,8 +11,7 @@ html {
 }
 
 body {
-	/* background: #131313; */
-	background: #0d0d0f;
+	background: #0f0f0f;
 	color: whitesmoke;
 	font-family: 'Overpass', sans-serif;
 	font-optical-sizing: auto;

@@ -1,33 +1,30 @@
 <script lang="ts">
 	import { AppWindow, SlidersHorizontal, Github, ArrowUpRight } from '@lucide/svelte';
-	import * as index from '$lib/index';
-	import Navbar from '$lib/component/navbar.svelte';
 	import Seo from '$lib/component/shared/seo.svelte';
+	import { pages } from '$lib/config/seo';
 
 	const projects = [
 		{
 			title: 'Browser Extension Manager UI',
 			description: 'Browser extension manager for managing extensions',
-			links: ['https://browser-extension-manager-ui.vercel.app', 'https://github.com/techie084'],
+			links: [
+				'https://github.com/techie084',
+				'https://browser-extension-manager-ui-pink.vercel.app'
+			],
 			icons: AppWindow,
 			linkIcons: [Github, ArrowUpRight]
 		},
 		{
 			title: 'Animation Poll',
 			description: 'Poll system used to vote based on question asked',
-			links: ['https://animation-poll.vercel.app', 'https://github.com/techie084'],
+			links: ['https://github.com/techie084', 'https://animation-poll.vercel.app'],
 			icons: SlidersHorizontal,
 			linkIcons: [Github, ArrowUpRight]
 		}
 	];
 </script>
 
-<Seo
-	title="{index.title} | {index.description[2]}"
-	description="Projects section | Wisdom Matthew"
-	url="https://techie08.vercel.app/projects"
-	image="https://techie08.vercel.app/"
-/>
+<Seo meta={pages.projects} />
 
 <section class=" h-full w-full space-y-4">
 	<h1
@@ -65,5 +62,3 @@
 		</div>
 	{/each}
 </section>
-
-<Navbar />

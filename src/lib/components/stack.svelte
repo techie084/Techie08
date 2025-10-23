@@ -53,7 +53,7 @@
 	<div class="mt-3 flex w-full flex-wrap gap-2">
 		{#each stacks as stack}
 			<a
-				class=" flex w-max items-center gap-2 rounded-md bg-[#26262a] p-2 text-gray-200"
+				class=" flex w-max items-center gap-2 rounded-md bg-[#212121] p-2 text-gray-200"
 				target="_blank"
 				href={stack.link}
 				><img class="h-7 w-7" src={stack.image} alt={stack.image} />{stack.title}

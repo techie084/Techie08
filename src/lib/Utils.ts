@@ -1,31 +1,31 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-interface PostMetaData {
-	title: string;
-	date: string;
-	description: string;
-	tags: string[];
-}
+// interface PostMetaData {
+// 	title: string;
+// 	date: string;
+// 	description: string;
+// 	tags: string[];
+// 	author: string;
+// }
 
-export const fetchMarkdownPosts = async () => {
-	const allPostFiles = import.meta.glob('$lib/blog-posts/*.md', { eager: true });
-	const iterablePostFiles = Object.entries(allPostFiles);
+// export const fetchMarkdownPosts = async () => {
+// 	const allPostFiles = import.meta.glob('$lib/blog-posts/*.md', { eager: true });
+// 	const iterablePostFiles = Object.entries(allPostFiles);
 
-	const allPosts = await Promise.all(
-		iterablePostFiles.map(async ([path, resolver]) => {
-			const metadata = await Promise<{ metadata: PostMetaData }>;
-			// must adjust this every time you change the path of the blog posts
-			// const postSlug = path.slice(0, -3);
-			const postSlug = path.split('/').pop()?.replace('.md', '') ?? '';
+// 	const allPosts = await Promise.all(
+// 		iterablePostFiles.map(async ([path]) => {
+// 			// must adjust this every time you change the path of the blog posts
+// 			const metadata = Promise<{ metadata: PostMetaData }>;
+// 			// const postSlug = path.slice(0, -3);
+// 			const postSlug = path.split('/').pop()?.replace('.md', '') ?? '';
 
-			return {
-				meta: metadata,
-				postSlug: postSlug
-			};
-		})
-	);
+// 			return {
+// 				meta: metadata,
+// 				postSlug: postSlug
+// 			};
+// 		})
+// 	);
 
-	return allPosts;
-};
+// 	return allPosts;
+// };
 
 export function timeAgo(dateInput: string | number | Date) {
 	const date = new Date(dateInput);

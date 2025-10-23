@@ -1,10 +1,16 @@
 <script lang="ts">
-	// import Post1 from "$lib/blog-posts/svelte-is-better.md"
+	// import Post1 from '$lib/blog-posts/svelte-is-better.md';
+	import { trackClick } from '$lib/utils/analytics';
+	import { onMount } from 'svelte';
 
 	let { data } = $props();
-	$inspect(data);
+
+	onMount(() => {
+		trackClick(data.title);
+	});
 </script>
 
-<!-- <Post1 /> -->
-<h1>{data.title}</h1>
-<p>{data.body}</p>
+<h1>{data.post.title}</h1>
+<div class="m-4 border-gray-800">{data.post.content}</div>
+
+<!-- <Post1 class="m-4 border-gray-800" /> -->

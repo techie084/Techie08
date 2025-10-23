@@ -20,7 +20,7 @@
 	]);
 
 	// Navigation state Changes
-	let isMenuOpen = $state(true);
+	let isMenuOpen: boolean = $state(true);
 </script>
 
 <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
@@ -45,7 +45,7 @@
 			<li class="flex flex-col gap-2">
 				{#each navigation as { name, path, icon }}
 					<a
-						class="flex w-full items-center gap-1 rounded-md bg-[#37373c] px-2 py-1 text-gray-200"
+						class="flex w-full items-center gap-1 rounded-md bg-[#212121] px-2.5 py-1 text-gray-200"
 						aria-current="page"
 						href={path}
 					>
