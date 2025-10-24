@@ -6,7 +6,7 @@ This project showcases some of the work I've done as a developer, including real
 
 ## 🌐 Live Demo
 
-Check out the live version here: [https://techie08.vercel.app](https://techie08.vercel.app)
+Check out the live version here: [https://emediong08.vercel.app](https://emediong08.vercel.app)
 
 ## 📸 Preview
 
@@ -43,9 +43,9 @@ Check out the live version here: [https://techie08.vercel.app](https://techie08.
 
 2. Run this command to install dependency.
 
-   ```npm
-   npm install
-   npm run dev
+   ```bun
+   bun install
+   bun run dev
    ```
 
 3. Open your browser and visit <http://localhost:5173>.
