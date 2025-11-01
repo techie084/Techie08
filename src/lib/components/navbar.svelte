@@ -20,7 +20,7 @@
 	]);
 
 	// Navigation state Changes
-	let isMenuOpen: boolean = $state(true);
+	let isMenuOpen = $state<boolean>(true);
 </script>
 
 <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->

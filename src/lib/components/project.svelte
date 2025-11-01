@@ -2,11 +2,8 @@
 	import { SlidersHorizontal, AppWindow, ArrowRight, Github, ArrowUpRight } from '@lucide/svelte';
 
 	interface Project {
-		// id: number;
 		title: string;
 		description: string;
-		// lonngDescripton: string;
-		// image: string;
 		tags: (typeof Github | typeof ArrowUpRight)[];
 		icon: typeof SlidersHorizontal | typeof AppWindow;
 		links: string[];
@@ -14,17 +11,17 @@
 
 	const projects: Project[] = [
 		{
-			title: 'Browser Extension Manager UI',
-			description: 'Browser extension manager for managing extensions',
+			title: 'Mellure',
+			description: 'Mini e-commerce platform for Shopping Glasses',
 			icon: AppWindow,
-			links: ['https://browser-extension-ui.vercel.app', 'https://github.com/techie084'],
+			links: ['https://github.com/techie084', 'https://mellure-lux.vercel.app'],
 			tags: [Github, ArrowUpRight]
 		},
 		{
 			title: 'Animation Poll',
 			description: 'Poll system used to vote based on question asked',
 			icon: SlidersHorizontal,
-			links: ['https://animation-poll.vercel.app', 'https://github.com/techie084'],
+			links: ['https://github.com/techie084', 'https://animation-poll.vercel.app'],
 			tags: [Github, ArrowUpRight]
 		}
 	];
@@ -35,7 +32,7 @@
 		Projects <a href="/project"><ArrowRight class="h-6 w-6 cursor-pointer text-gray-200" /></a>
 	</h2>
 
-	{#each projects as project}Analytics.svelte
+	{#each projects as project}
 		<div class="flex w-full items-center gap-2 rounded-lg border border-[#26262a] p-2">
 			<svelte:component
 				this={project.icon}

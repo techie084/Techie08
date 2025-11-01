@@ -1,12 +1,34 @@
-<script lang="ts">
-	import { dev } from '$app/environment';
-	// const GOOGLE_ANALYTICS_ID = 'UA-123456789-1';
-	// const GOOGLE_ANALYTICS_DOMAIN = 'my-portfolio.com';
-</script>
+<!-- <script lang="ts">
+	import { page } from '$app/state';
 
-<svelte:head>
+	$: {
+		if (typeof gtag !== 'undefined') {
+			gtag('config', 'MEASUREMENT_ID', {
+				page_title: document.title,
+				page_path: page.url.pathname
+			});
+		}
+	}
+</script> -->
+
+<!-- <svelte:head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('js', new Date());
+		gtag('config', 'MEASUREMENT_ID');
+	</script>
+</svelte:head> -->
+
+<!-- <svelte:head>
 	{#if !dev}
-		<script async src="https://www.googletagmanager.com/gtag/js?id={gaId}"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id={GOOGLE_ANALYTICS_ID}"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
@@ -16,4 +38,4 @@
 			gtag('config', '{gaId}');
 		</script>
 	{/if}
-</svelte:head>
+</svelte:head> -->

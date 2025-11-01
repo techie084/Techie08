@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://techie08.vercel.app/sitemap.xml

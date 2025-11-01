@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { AppWindow, SlidersHorizontal, Github, ArrowUpRight } from '@lucide/svelte';
-	import Seo from '$lib/component/shared/seo.svelte';
+	import Seo from '$lib/components/shared/seo.svelte';
 	import { pages } from '$lib/config/seo';
 
 	const projects = [

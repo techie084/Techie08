@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { MessageCircleMore, FileUser } from '@lucide/svelte';
-	import * as index from '$lib/index';
 </script>
 
 <header
@@ -13,13 +12,14 @@
 			class="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl
 		font-bold text-transparent sm:text-3xl"
 		>
-			<strong>{index.title}</strong>
+			<strong>Emediong Matthew</strong>
 		</h1>
 		<p class="text-lg">
-			Full-Stack Web Developer specialized in <b>Svelte</b>, <b>Svelte-Kit</b>, <b>TypeScript</b>,
-			<b> Node Js </b>
-			<!-- Frontend Web Developer specialized in <b>Svelte</b>, <b>Svelte-Kit</b>, <b>TypeScript</b>, -->
-			focused on building Scalable, Performant Web Application With clean, maintainable code.
+			<!-- Full-Stack Web Developer specialized in <b>Svelte</b>, <b>Svelte-Kit</b>, <b>TypeScript</b>,
+			<b> Node-Js </b> -->
+			Frontend Web Developer specialized in <b>Svelte</b>, <b>Svelte-Kit</b>, <b>TypeScript</b>,
+			<b>Express.js/Node.js</b>, focused on building Scalable, Performant Web Application With
+			clean, maintainable code.
 		</p>
 		<div class="item-center mt-4 flex gap-4">
 			<a
@@ -49,5 +49,18 @@
 			>
 		</div>
 	</section>
-	<img src="/avatar.jpg" alt="avatar" class="mb-2 size-[4rem] animate-bounce rounded-full" />
+	<img
+		src="/avatar.jpg"
+		alt="Emediong Matthew's profile"
+		class="tw-shadow mb-2 aspect-square w-1/3 rounded-2xl"
+		style="color:transparent"
+	/>
+	<!-- <img
+		alt=""
+		fetchpriority="high"
+		width="100"
+		height="100"
+		class="tw-shadow aspect-square rounded-2xl bg-[#dcdcdc]"
+		src="/avatar.jpg"
+	/> -->
 </header>

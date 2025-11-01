@@ -1,8 +1,10 @@
 <script lang="ts">
+	import { pages } from '$lib/config/seo';
 	import { Github } from '@lucide/svelte';
 	import Seo from '$lib/components/shared/seo.svelte';
-	import { pages } from '$lib/config/seo';
-	let { data } = $props();
+	// let { data } = $props();
+
+	// let dataBlog = data;
 </script>
 
 <Seo meta={pages.blog} />
@@ -14,9 +16,9 @@
 		<strong class="flex h-full w-full">Blog's</strong>
 	</h1>
 
-	{#each data as { slug, title }}
-		<li><a href="/blog/{slug}">{title}</a></li>
-	{/each}
+	<!-- {#each dataBlog as } -->
+	<!-- <li><a href="/blog/{slug}">{title}</a>{sum</li> -->
+	<!-- {/each} -->
 
 	<div class="my-8 w-full rounded-xl border border-neutral-700 bg-neutral-800 px-4 py-2 pb-3">
 		<div class="mb-2 flex justify-between">

@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/state';
 	import { LibraryBig, ArrowRight } from '@lucide/svelte';
 
 	const blogPost = [
@@ -37,7 +36,8 @@
 		</a>
 	{/each}
 </section>
-<script lang="ts">
+
+<!-- <script lang="ts">
   import { page } from '$app/stores';
   import { Calendar, Clock, Tag, ChevronLeft } from 'lucide-svelte';
 
@@ -50,27 +50,30 @@
   export let category: string = 'Article';
   export let image: string | undefined = undefined;
   export let readTime: number = 5;
-</script>
+</script> -->
 
-<main class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 text-white pt-20 pb-20">
-  <article class="max-w-3xl mx-auto px-4">
-    <!-- Back Button -->
-    <a href="/blog" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-8">
-      <ChevronLeft size={20} />
-      Back to Blog
-    </a>
+<!-- <main class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 text-white pt-20 pb-20">
+  <article class="max-w-3xl mx-auto px-4"> -->
+<!-- Back Button -->
+<!-- <a
+	href="/blog"
+	class="mb-8 inline-flex items-center gap-2 text-gray-400 transition-colors hover:text-white"
+>
+	<ChevronLeft size={20} />
+	Back to Blog
+</a> -->
 
-    <!-- Featured Image (if exists) -->
-    {#if image}
+<!-- Featured Image (if exists) -->
+<!-- {#if image}
       <img
         src={image}
         alt={title}
         class="w-full h-64 md:h-96 object-cover rounded-xl mb-8"
       />
-    {/if}
+    {/if} -->
 
-    <!-- Header -->
-    <header class="mb-12">
+<!-- Header -->
+<!-- <header class="mb-12">
       <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
         {title}
       </h1>
@@ -98,20 +101,20 @@
           <Tag size={18} />
           {category}
         </div>
-      </div>
+      </div> -->
 
-      <!-- Tags -->
-      <div class="flex flex-wrap gap-2">
+<!-- Tags -->
+<!-- <div class="flex flex-wrap gap-2">
         {#each tags as tag}
           <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">
             {tag}
           </span>
         {/each}
       </div>
-    </header>
+    </header> -->
 
-    <!-- Markdown Content -->
-    <div class="prose prose-invert prose-lg max-w-none
+<!-- Markdown Content -->
+<!-- <div class="prose prose-invert prose-lg max-w-none
                 prose-headings:font-bold
                 prose-headings:text-white
                 prose-h1:text-3xl prose-h1:mb-4 prose-h1:mt-8
@@ -129,10 +132,10 @@
                 prose-img:rounded-lg prose-img:shadow-lg
     ">
       <slot />
-    </div>
+    </div> -->
 
-    <!-- Author -->
-    <div class="border-t border-slate-700 pt-8 mt-12">
+<!-- Author -->
+<!-- <div class="border-t border-slate-700 pt-8 mt-12">
       <p class="text-gray-400">
         Written by <span class="font-semibold text-white">{author}</span>
       </p>
@@ -149,4 +152,4 @@
   :global(.prose code) {
     font-size: 0.9em;
   }
-</style>
+</style> -->

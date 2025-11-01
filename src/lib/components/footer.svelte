@@ -1,7 +1,3 @@
-<script lang="ts">
-	import * as index from '$lib/index';
-</script>
-
 <footer>
-	<p>{index.title} 🤍 &copy; {new Date().getFullYear()}</p>
+	<p>&copy; {new Date().getFullYear()}Emediong's personal site.</p>
 </footer>

@@ -1,4 +1,8 @@
-export const posts = [
+export const posts: Array<{
+	slug: string;
+	title: string;
+	content: string;
+}> = [
 	{
 		slug: 'welcome',
 		title: 'Welcome to the Aperture Science computer-aided enrichment center',

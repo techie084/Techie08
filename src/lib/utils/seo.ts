@@ -48,7 +48,7 @@ export const generateStructuredData = (type: 'person' | 'organization' | 'creati
 	if (type === 'person') {
 		return {
 			...baseStructure,
-			jobTitle: 'Frontend Developer',
+			jobTitle: 'Full-stack Developer',
 			sameAs: [siteConfig.github, siteConfig.linkedin, `https://twitter.com/${siteConfig.twitter}`],
 			worksFor: {
 				'@type': 'Organization',

@@ -2,7 +2,7 @@
 title: Svelte is better for beginners
 date: 04-08-2025
 desc: Svelte has recently become near and dear to me. I would like to explain the hype around this frontend framework and why it makes sense
-# author: Wisdom Matthew
+author: Wisdom Matthew
 tags:
   - programming
   - svelte
@@ -17,7 +17,7 @@ The word Svelte is from French, _svelt_, meaning "slim, slender". Which is the p
 
 Svelte was first released in 2016 and recently updated to version 4 in June of this year. I first discovered Svelte around a month ago after seeing it featured in a [YouTube video](https://www.youtube.com/watch?v=bh-e700IlmQ) by ThePrimeagen.
 
-My first application in Svelte was a website that replays a competitive programming competition leaderboard on [Kattis](https://open.kattis.com). On the same day that I started that project, I also finished it. Using Svelte that day made me feel like a superhero. I had informed my competition team about the tool I was going to make for us, and was able to release it to them on the same day, something I don't think would have been possible if I started out learning a framework like React.
+My first application in Svelte was a website that replays a competitive programming competition leader-board on [Kattis](https://open.kattis.com). On the same day that I started that project, I also finished it. Using Svelte that day made me feel like a superhero. I had informed my competition team about the tool I was going to make for us, and was able to release it to them on the same day, something I don't think would have been possible if I started out learning a framework like React.
 
 ## My experience with React
 
@@ -39,10 +39,10 @@ When you go to their [tutorial page](https://learn.svelte.dev) it greets you wit
 Their tutorial series consists of 4 parts with each having different lessons all separated by categories.
 
 ![List of Svelte's subcategories of tutorials](https://s6.imgcdn.dev/VXfuo.png)
-Sure, React also has a tutorial on their website. In no way is that tutorial better than Svelte's. React has structured their tutorial through documentation rather than an interactive layout like Svelte's.
+Sure, React also has a tutorial on their website. In no way is that tutorial better than Svelte. React has structured their tutorial through documentation rather than an interactive layout like Svelte.
 
 ![React's website for teaching](https://s6.imgcdn.dev/VXt1O.png)
-This may just be personal preference, but when I was learning React, I would have loved something like Svelte's tutorials where every concept could be treated like a Leetcode problem that I needed to solve. It's just how my brain works. I believe that this the style of learning is the most productive when it comes to teaching something new in programming.
+This may just be personal preference, but when I was learning React, I would have loved something like Svelte tutorials where every concept could be treated like a Leet-code problem that I needed to solve. It's just how my brain works. I believe that this the style of learning is the most productive when it comes to teaching something new in programming.
 
 ## Simplicity
 
@@ -73,7 +73,7 @@ As a beginner, starting out with React, my first thoughts when reading react cod
 
 1. what there is just too much verbosity for something that really can be much simpler.
 
-**Sure,** at times verbosity is needed, no not you Java (I have 3 years of pain with Java 😭). When learning something like frontend for the first time, the verbosity can be overwhelming at times and thats the last thing you would want when trying something new.
+**Sure,** at times verbosity is needed, no not you Java (I have 3 years of pain with Java 😭). When learning something like frontend for the first time, the verbosity can be overwhelming at times and that's the last thing you would want when trying something new.
 
 ## Conclusion
 

@@ -12,5 +12,3 @@
 
 <h1>{data.post.title}</h1>
 <div class="m-4 border-gray-800">{data.post.content}</div>
-
-<!-- <Post1 class="m-4 border-gray-800" /> -->

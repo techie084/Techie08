@@ -4,7 +4,7 @@ export function trackEvent(
 		category?: string;
 		label?: string;
 		value?: number;
-		// [key: string]: any;
+		// [key: string]: undefined;
 	}
 ) {
 	// Only track in production
@@ -12,7 +12,7 @@ export function trackEvent(
 		console.log('📊 [Dev] Event:', eventName, eventParams);
 		return;
 	}
-
+	//ts-ignore
 	if (typeof window !== 'undefined' && window.gtag) {
 		window.gtag('event', eventName, eventParams);
 	}
@@ -21,7 +21,7 @@ export function trackEvent(
 /**
  * Track page views (automatically handled by GoogleAnalytics component)
  */
-export function trackPageView(path: string) {
+export const trackPageView = (path: string) => {
 	if (import.meta.env.DEV) return;
 
 	if (typeof window !== 'undefined' && window.gtag) {
@@ -29,7 +29,7 @@ export function trackPageView(path: string) {
 			page_path: path
 		});
 	}
-}
+};
 
 /**
  * Track button/link clicks
@@ -51,17 +51,6 @@ export function trackFormSubmit(formName: string, success: boolean) {
 		event_label: formName
 	});
 }
-
-/**
- * Track project views
- */
-export function trackProjectView(projectName: string) {
-	trackEvent('project_view', {
-		event_category: 'projects',
-		event_label: projectName
-	});
-}
-
 /**
  * Track blog post reads
  */

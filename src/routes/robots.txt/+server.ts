@@ -6,7 +6,7 @@ Allow: /
 Disallow: /private/
 Disallow: /admin/
 
-Sitemap: https://wisdommatthew.com/sitemap.xml
+Sitemap: https://emediong08.vercel.app/sitemap.xml
 
 User-agent: AdsBot-Google
 Allow: /

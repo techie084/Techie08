@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { gsap } from 'gsap';
 
 	document.addEventListener('DOMContentLoaded', function () {
@@ -69,4 +69,4 @@
 		-webkit-clip-path: var(--clipPath);
 		transition: clip-path 0s;
 	}
-</style>
+</style> -->

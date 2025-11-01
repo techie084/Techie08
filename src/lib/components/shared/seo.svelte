@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import type { SEOMeta } from '$lib/utils/seo';
-	// import { generateStructuredData } from '$lib/utils/seo';
-
 	export let meta: SEOMeta;
 
+	// import { generateStructuredData } from '$lib/utils/seo';
 	// $: structuredData = generateStructuredData('person');
 </script>
 
@@ -44,7 +43,7 @@
 	<meta property="twitter:description" content={meta.description} />
 	<meta property="twitter:image" content={meta.ogImage} />
 	<meta property="twitter:creator" content="@yourtwitter" />
-	s
+
 	<!-- Additional SEO -->
 	<meta name="author" content="Emediong Matthew" />
 	<meta name="robots" content={meta.noindex ? 'noindex, nofollow' : 'index, follow'} />
