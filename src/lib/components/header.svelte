@@ -38,7 +38,7 @@
 					<span class=" relative inline-flex size-2.5 rounded-full bg-green-500"></span>
 				</span>
 			</a>
-			<a
+			<!-- <a
 				href="/"
 				type="button"
 				class="flex items-center justify-center gap-1 rounded-md border px-2 py-1 text-[clamp(0.8rem,2vw,1rem)] text-gray-200"
@@ -46,7 +46,7 @@
 			>
 				<FileUser class="py-1" aria-hidden="true" />
 				<span>Resume</span></a
-			>
+			> -->
 		</div>
 	</section>
 	<img

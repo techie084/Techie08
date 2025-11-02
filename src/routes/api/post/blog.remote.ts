@@ -1,7 +1,7 @@
-import { query } from '$app/server';
-import { posts } from './data';
-
-export const getPosts = query(async () => {
+import { prerender } from '$app/server';
+import { posts } from '/home/emediong/Public/my-portfolio/src/routes/blog/data.ts';
+// src/routes/blog/data.ts
+export const getPosts = prerender(async () => {
 	const post = posts.map((post) => ({
 		slug: post.slug,
 		title: post.title,
