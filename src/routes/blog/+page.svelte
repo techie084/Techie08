@@ -2,7 +2,7 @@
 	import { pages } from '$lib/config/seo';
 	import { Github } from '@lucide/svelte';
 	import Seo from '$lib/components/shared/seo.svelte';
-	import { getPosts } from './blog.remote';
+	import { getPosts } from './../api/post/blog.remote';
 
 	let query = getPosts();
 </script>
@@ -21,9 +21,9 @@
 	{:else if query.loading}
 		<p>loading.....</p>
 	{:else}
-		<ul>
-			{#each await getPosts() as { slug, title, content }}
-				<li><a href="/blog/{slug}">{title}</a>{content}</li>
+		<ul class="space-y-10">
+			{#each await getPosts() as { slug, title }}
+				<li><a href="/blog/{slug}">{title}</a></li>
 			{/each}
 		</ul>
 	{/if}
