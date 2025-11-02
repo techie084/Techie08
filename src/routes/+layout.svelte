@@ -8,7 +8,7 @@
 		title: 'Emediong Matthew | Software Developer',
 		description:
 			'Software Developer specialized in Svelte, SvelteKit, TypeScript Express.js/Node.js Mongodb. Building scalable, performant web applications with clean code.',
-		ogImage: 'https://emediong08.vercel.app/og-image.png'
+		ogImage: 'https://emediong08.vercel.app/staric/og-image.png'
 	};
 
 	let { children } = $props();

@@ -2,9 +2,9 @@
 	import { pages } from '$lib/config/seo';
 	import { Github } from '@lucide/svelte';
 	import Seo from '$lib/components/shared/seo.svelte';
-	// let { data } = $props();
+	import { getPosts } from './blog.remote';
 
-	// let dataBlog = data;
+	let query = getPosts();
 </script>
 
 <Seo meta={pages.blog} />
@@ -16,9 +16,17 @@
 		<strong class="flex h-full w-full">Blog's</strong>
 	</h1>
 
-	<!-- {#each dataBlog as } -->
-	<!-- <li><a href="/blog/{slug}">{title}</a>{sum</li> -->
-	<!-- {/each} -->
+	{#if query.error}
+		<p>oooooooops!</p>
+	{:else if query.loading}
+		<p>loading.....</p>
+	{:else}
+		<ul>
+			{#each await getPosts() as { slug, title, content }}
+				<li><a href="/blog/{slug}">{title}</a>{content}</li>
+			{/each}
+		</ul>
+	{/if}
 
 	<div class="my-8 w-full rounded-xl border border-neutral-700 bg-neutral-800 px-4 py-2 pb-3">
 		<div class="mb-2 flex justify-between">
@@ -29,8 +37,6 @@
 				href="https://github.com/techie084"><Github class="w-5" /> Follow</a
 			>
 		</div>
-		<p class="text-lg">
-			If you enjoy this post then consider sharing it and/or following me on Github.
-		</p>
+		<p class="text-lg">If you enjoy this post then consider sharing it or following me on Github</p>
 	</div>
 </section>

@@ -7,7 +7,7 @@ interface PostMetaData {
 }
 
 export const fetchMarkdownPosts = async () => {
-	const allPostFiles = import.meta.glob('$lib/blog-posts/*.md', { eager: true });
+	const allPostFiles = import.meta.glob('$lib/posts/*.md', { eager: true });
 	const iterablePostFiles = Object.entries(allPostFiles);
 
 	const allPosts = await Promise.all(

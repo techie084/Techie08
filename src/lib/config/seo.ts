@@ -28,7 +28,7 @@ export const pages = {
 	home: {
 		title: 'Emediong Matthew | Software Developer',
 		description:
-			"Emediong Matthew's portfolio. Software Developer specialized in Svelte, Svelte-Kit,TypeScript,Express.js/Node.js. Building scalable web applications.",
+			"Emediong Matthew's. Software Developer specialized in Svelte, Svelte-Kit,TypeScript,Express.js/Node.js. Building scalable web applications.",
 		keywords: ['portfolio', 'developer', 'svelte', 'sveltekit', 'typescript']
 	},
 	projects: {

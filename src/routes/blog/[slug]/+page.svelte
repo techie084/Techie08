@@ -1,13 +1,16 @@
-<!-- <script lang="ts">
+<script lang="ts">
 	import { trackClick } from '$lib/utils/analytics';
 	import { onMount } from 'svelte';
+	import { getPosts } from '../blog.remote';
 
-	let { data } = $props();
+	let { params } = $props();
+
+	const post = $derived(await getPosts(params.slug));
 
 	onMount(() => {
-		trackClick(data.title);
+		trackClick(post.);
 	});
 </script>
 
-<h1>{data.post.title}</h1>
-<div class="m-4 border-gray-800">{data.post.content}</div> -->
+<h1>{post}</h1>
+<div class="m-4 border-gray-800">{@html post.content}</div>
